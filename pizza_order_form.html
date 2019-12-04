@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <title>Pizza Order Form</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+
+	<body>
+	    <header>
+            <div id="finalProjectPizzaImage"></div>
+	    </header>
+        <div id="finalProject">
+            <h1> Pizza Order Form </h1>
+            
+            <form id="myForm" method="POST" action="http://lavalamp.dyndns.org/~mult114/pizzaorder_olympic.php" onsubmit="return validateForm();">
+            
+                <!--                TEXT INPUTS             -->
+               
+                <h2 class="formHeading">Personal Information</h2>
+                <p><label for="difficulty">
+                    <input type="hidden" name="difficulty" value="2">
+                </label></p>
+                <p id="firstNameInput" ><label id="FirstName_tf" for="FirstName_tf"> First Name: 
+                    <input type="text" name="FirstName_tf"> <span id="nameRequired"> </span>
+                </label></p>
+                <p id="lastNameInput"><label for="LastName_tf"> Last Name: 
+                    <input type="text" name="LastName_tf"> <span id="lastNameRequired"> </span>
+                </label></p>
+                <p id="addressInput"><label for="Address_tf"> Address: 
+                    <input type="text" name="Address_tf"> <span id="addressRequired"> </span>
+                </label></p>
+                <p id="phoneNumInput"><label for="Phone_tf"> Phone Number: 
+                    <input type="tel" name="Phone_tf"> <span id="phoneNumRequired"> </span>
+                </label></p>
+                <p id="emailInput"><label for="Email_tf"> Email Address:
+                    <input type="email" name="Email_tf"> <span id="emailRequired"> </span>
+                </label></p>
+                
+                <!--                RADIO BUTTONS-->
+               
+                <h2 class="formHeading">Select Pizza Size <span id="pizzaSizeRequired"> </span> </h2>    
+                <p>
+                   <label> 
+                        <input type="radio" name="Size_rg" value="10" onchange= "findCheckedPizza('myForm');"> Small 10" 
+                    </label>
+                </p>
+                <p>
+                   <label> 
+                        <input type="radio" name="Size_rg" value="12" onchange= "findCheckedPizza('myForm');"> Medium 12" 
+                    </label>
+                </p>
+                <p>
+                   <label> 
+                        <input type="radio" name="Size_rg" value="15" onchange= "findCheckedPizza('myForm');"> Large 15" 
+                    </label>
+                </p>
+                
+                <h2 id="paymentForm" class="formHeading" > Payment: <span id="paymentOptionRequired"> </span></h2>
+                <label for="Payment_menu"> 
+                    <select name="Payment_menu" id="Payment_menu">
+                        <option value="select">- Select Payment Method -</option>
+                        <option value="cash">Cash</option>
+                        <option value="debit">Debit</option>
+                        <option value="credit">Credit Card</option>
+                    </select>
+                </label>
+                
+
+                <!--                CHECKBOXES  -->
+                
+                <h2 class="formHeading">Toppings</h2>
+                <p>
+                    <input type="checkbox" name="Anchovies_cb" value="yes">
+                    <label for=""> Anchovies </label>
+                </p>
+                <p>
+                    <input type="checkbox" name="DoubleCheese_cb" value="yes">
+                    <label for=""> Double Cheese </label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Pepperoni_cb" value="yes">
+                    <label for=""> Pepperoni </label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Mushroom_cb" value="yes">
+                    <label for=""> Mushrooms </label>
+                </p>
+                
+                <!--                PRICE INPUTS -->
+                
+                <h2 class="formHeading">Payment Details</h2>
+                <p>
+                    <label for="SubTotal_tb"> SubTotal $: 
+                        <input type="text" name="SubTotal_tb" readonly="true">
+                    </label>
+                </p>
+                <p>
+                    <label for="PST_tb"> PST $: 
+                        <input type="text" name="PST_tb" readonly="true">
+                    </label>
+                </p>
+                <p>
+                    <label for="GST_tb"> GST $: 
+                        <input type="text" name="GST_tb" readonly="true">
+                    </label>
+                </p>
+                <p>
+                    <label for="Total_tb"> Total $: 
+                        <input type="text" name="Total_tb" readonly="true">
+                    </label>
+                </p>
+                               
+                <p><input type="submit" name="Submit_but" value="Submit Order" onclick="toppingsChecked('myForm'); calculateSubTotal(); calculateGstToPay(); calculatePstToPay(); calculateTotalAmount();"></p>
+            </form>
+        </div>
+        
+	    <footer>
+	        <p>&copy Designed by Dmitry Polyakov</p>
+	    </footer>
+	    <script src="scripts/script.js" type="text/javaScript" ></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+

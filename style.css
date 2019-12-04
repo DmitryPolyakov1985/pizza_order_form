@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.active {
+    background-color: #999;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    min-height: calc(100% - 43px);
+    padding-bottom: 43px;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #98d1cf;
+}
+
+#logo h1 {
+    padding: 1em;
+    margin-left: 1em;
+    color: #555;
+}
+
+#logo a {
+    width: 13%;
+}
+
+#logo img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0.5em;
+    margin-right: 1em;
+    flex-shrink: 1;
+}
+
+#logo p {
+    color: #555;
+    font-size: 1.5em;
+    flex-grow: 2;
+    margin-left: 5%;
+}
+
+h2 {
+    text-align: center;
+    padding: 1em;
+    font-size: 2.2em;
+}
+
+#finalProjectPizzaImage {
+    background: url('images/pizzaCompressed.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25vh;
+}
+#writeAlgorithms {
+    width: 65%;
+    margin: 0 auto;
+    padding: 3em 2em;
+    line-height: 1.6;
+}
+
+#writeAlgorithms h1 {
+    font-size: 2.5em;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+#writeAlgorithms h2 {
+    font-size: 1.75em;
+    padding: 0.5em 0;
+    margin-top: 1em;
+}
+
+#writeAlgorithms p {
+   padding-left: 3em;
+}
+
+#writeAlgorithms ol {
+   padding-left: 5em;
+}
+
+#doomsDayAlgorithm p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0.7em;
+}
+
+#operations p,
+#prompt p {
+    padding: 0.5em;   
+}
+
+#arrays h2,
+#arrays h3,
+#arrays p {
+    padding: 0.5em;
+}
+
+#TwoDArrays h2,
+#TwoDArrays h3,
+#TwoDArrays p{
+    padding: 0.5em;
+}
+
+#assign3Arrays p {
+    padding: 0.5em;
+}
+
+#writeln p {
+    padding: 0.5em;    
+}
+
+#variables p {
+    padding: 0.5em;    
+}
+
+#comparison ul {
+    margin: 2em;
+    line-height: 1.2;
+}
+
+#comparison ul li {
+    margin-top: 1em;
+}
+
+#booleans ol {
+    margin: 2em;
+    line-height: 1.2;
+}
+
+#booleans ol li {
+    margin-top: 1em;
+}
+
+#useIf p,
+#useIfElse p, 
+#useNestedIf p,
+#switch p,
+#decisionStructures p {
+    margin: 1em;
+}
+
+#useWhileLoops p,
+#assign5WhileLoops p,
+#assign6DoWhileLoops p,
+#useForLoops p,
+#useForLoopsToSolveProblems p,
+#assign8NestedLoops p,
+#assign9ProgrAssign p,
+#createSimpleFunction p,
+#createSimpleFunction h1,
+#createFunctions p,
+#functionWithReturn p,
+#assign10CreateProperFunction p,
+#assign10NameAndDays p, 
+#assign10YearsToDays p,
+#useJSDocumentation p,
+#createObjectInstances p,
+#useDateObject p,
+#assign11UseNativeObjects p,
+#assign12UseBrowserObject p, 
+#assign13TemperatureConversion p,
+#assign14MouseoverAndChangeClass p,
+#assign16CreateSelectUsingDOM p,
+#webquestTriedAndTrue h1 {
+    margin: 0.5em;
+}
+
+#useForLoopsWithArrays ol,
+#useForLoopsWithArrays h1 {
+    margin-left: 2em;
+}
+
+
+#assign12UseBrowserObject ul {
+    margin-left: 4em;
+    width: 30%;
+}
+
+#assign12UseBrowserObject ul li:hover {
+    font-weight: bold;
+}
+
+#useJSDocumentation h1,
+#createObjectInstances h1 {
+    font-size: 1.5em;
+    margin-top: 0.65em;
+    margin-left: 0.4em;
+}
+
+#assign13TemperatureConversion {
+    padding: 1em;    
+}
+
+#assign12UseBrowserObject h1,
+#assign13TemperatureConversion h1,
+#assign14MouseoverAndChangeClass h1,
+#assign15CheckAllUncheckAll h1 {
+    margin: 0.6em;    
+}
+
+#myCheckboxes p {
+    margin: 0.5em 1.5em;
+}
+
+#useDateObject h1,
+#formProcessing h1,
+#assign17ACreateForm h1 {
+    font-size: 1.65em;
+    margin-top: 0.65em;
+    margin-left: 0.5em;
+    margin-bottom: 0.3em;
+}
+
+input[type=button] {
+    margin: 3em;
+    padding: 0.7em;
+    border-radius: 5%; 
+}
+
+input[type=button]:hover {
+    background-color: #999;
+    color: #fff;
+}
+.blueBackground {
+    border: 1px solid #e2e2e2;
+    background-color: #234c99;
+    color: #fff;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.largeFont {
+    font-size: 2.2em;
+    color: #990606;
+    background-color: lightgrey;
+    padding: 1.5em;
+}
+
+#selectDiv {
+    margin: 2em;
+}
+
+#webquestTriedAndTrue h2 {
+    text-align: left;
+    font-size: 1.8em;
+    padding: 0;
+    margin-left: 0.6em;
+    margin-bottom: 1.2em;
+}
+
+#webquestTriedAndTrue p {
+    width: 70%;
+    margin: 1em 3em;
+}
+
+#formProcessing form,
+#assign17ACreateForm form {
+    padding: 1.5em;
+    width: 50%;
+    border: 1px solid #555;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+#formProcessing form p,
+#assign17ACreateForm form p {
+    padding: 0.2em;
+}
+
+#formProcessing h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#finalProject {
+    background-color: #e8b492;    
+}
+
+#finalProject form {
+    padding: 1.5em;
+    /* width: 50%; */
+    width: 250px;
+    border: 1px solid #555;
+    margin: auto;
+    background-color: #d7e0f4;  
+}
+
+#finalProject h1 {
+    text-align: center;
+    font-size: 2.2em;
+    padding: 0.75em;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+
+#finalProject form p {
+    padding-bottom: 0.2em;
+}
+
+.formHeading,
+h2#paymentForm.formHeading {
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+#finalProject input[type=submit] {
+    padding: 0.5rem;
+    color: #444;
+    font-size: 1em;
+    margin: 2em;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#finalProject input[type=submit]:hover {
+    box-shadow: 1px 1px 1px #000;
+    background-color: #fff;
+    color: #000;
+}
+
+.redWarning {
+    color: red;
+}
+
+.regularBlackText {
+    color: #000;
+}
+
+#nameRequired,
+#lastNameRequired,
+#addressRequired,
+#phoneNumRequired,
+#emailRequired {
+ font-size: 0.74em;    
+}
+
+h2 #pizzaSizeRequired,
+h2 #paymentOptionRequired {
+    color: red;
+    font-size: 0.6em;
+    font-weight: 300;
+}
+
+#creditMenu {
+    display: none;
+    width: 100%;
+    margin: 2em 0;
+    padding: 1.5em;
+}
+
+#creditMenu div {
+    display: inline-block;
+    margin: 0.4em 0;
+}
+
+#yearRequired,
+#monthRequired {
+    font-size: 0.74em;
+    color: red;
+}
+
+footer {
+    background-color: #333;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.658);
+    font-size: 0.8rem;
+    margin-left: 2rem;
+}
+
+/* MEDIA QUERIES */
+@media (min-width:750px) {
+    #finalProjectPizzaImage {
+        height: 33vh;
+    }
+}
